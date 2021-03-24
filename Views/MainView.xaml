@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="CardReaderRecorder.Views.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="380" d:DesignWidth="550">
+    
+    <Grid x:Name="MainWin" Background="White">
+        <!--MAIN WINDOW-->
+        <ContentControl x:Name="MainContent" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Content="{Binding}"/>
+
+        <!--LOGO-->
+        <Image Source="{StaticResource LogoImg}" Grid.Row="0" Grid.ColumnSpan="3" Margin="30,0,30,0"/>
+
+        <!--BUTTONS-->
+        <Button x:Name="ReadMet" Grid.Column="0" Grid.Row="1" Height="150" Margin="15" BorderBrush="#00b6e0" Background="#00b6e0" Click="Read_Click">
+            <Viewbox Width="120">
+                <Image Source="{StaticResource ReadImg}"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="WriteMet" Grid.Column="1" Grid.Row="1" Height="150" Margin="15" BorderBrush="#00b6e0" Background="#00b6e0">
+            <Viewbox Width="100">
+                <Image Source="{StaticResource WriteImg}"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="Settings" Grid.Column="2" Grid.Row="1" Height="150" Margin="15" BorderBrush="#00b6e0" Background="#00b6e0">
+            <Viewbox Width="110">
+                <Image Source="{StaticResource SettingsImg}"/>
+            </Viewbox>
+        </Button>
+
+        <!--COLUMS & ROWS-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!--TextBlock Grid.Row="1" Grid.Column="0" Text="Чтение меток" Margin="39,0,37,15" HorizontalAlignment="Center" Width="106" Height="26" VerticalAlignment="Bottom" RenderTransformOrigin="0.851,0.429" Foreground="White"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Запись меток" Margin="39,0,37,15" HorizontalAlignment="Center" Width="106" Height="26" VerticalAlignment="Bottom" RenderTransformOrigin="0.851,0.429" Foreground="White"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="Настройки " Margin="52,0,23,17" HorizontalAlignment="Center" Width="106" Height="26" VerticalAlignment="Bottom" RenderTransformOrigin="0.851,0.429" Foreground="White"/-->
+    </Grid>
+</UserControl>

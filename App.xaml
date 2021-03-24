@@ -1,0 +1,15 @@
+﻿<Application x:Class="CardReaderRecorder.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CardReaderRecorder"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="LogoImg" UriSource="assets/logo.png" />
+            <BitmapImage x:Key="ReadImg" UriSource="assets/read.png" />
+            <BitmapImage x:Key="WriteImg" UriSource="assets/write.png" />
+            <BitmapImage x:Key="SettingsImg" UriSource="assets/settings.png" />
+            <BitmapImage x:Key="ArrowImg" UriSource="assets/arrow.png" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
